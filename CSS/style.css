@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*headings*/
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #000000;
+}
+
+
+/*navegador*/
+.wrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+/*nombre*/
+.wrapper .nombre{
+    padding: 20px;
+    font-size: 20px;
+    background-color: blueviolet;
+}
+
+.wrapper .nombre span{
+    color:aqua;
+}
+
+.wrapper .navegador{
+    display: flex;
+    justify-content: space-around;
+    padding: 1px;;
+    background-color: blueviolet;
+}
+
+/*lista none*/
+.wrapper .navegador li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+li{
+    padding: 15px;
+    border-radius: 10px;
+}
+a{
+    color: #fff;
+}
+a:hover{
+    text-decoration: none;
+    font-size: 30px;
+    transition: .3s ease-in-out;
+}
+.wrapper .navegador li:hover{
+    background-color:#9f57c5;
+    transition: ease-in .4s;
+    box-shadow: 0 2px 3px 0 #fff;
+}
+.wrapper .navegador li a:hover{
+    color:aqua;
+}
+
+/*menu*/
+
+.wrapper div{
+    background-color: #000000;
+}
+
+/*nombre*/
+.titulo .descarga h1,p{
+    font-size: 30px;
+}
+.wrapper .descarga{
+    margin-top: 30%;
+    padding: 2em;
+}
+
+/*imagen*/
+.fotografia{
+    width: 25%;
+    display: flex;
+    margin-bottom: 150px;
+    position: absolute;
+    transform: translateX(240%) translateY(5%);
+}
+.img{
+    display: none;
+    width: 90%;
+    margin-left: 100px;
+}
+
+/* imagen de bajo de header*/
+.wrapper .titulo{
+    display: grid;
+    grid-template-columns: 100% 70%;
+    text-align:right;
+}
+/*botones*/
+.boton-descarga .download-cv{
+    padding: 10px 20px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 12px -5px;
+
+}
+
+.download-cv:hover{
+    transition: .2s ease-in;
+    color: #fff;
+    background-color: red;
+    box-shadow: none;
+}
+
+.logo-program {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 75px;
+    margin-top: 50px;
+    padding: 10px;
+    
+}
+
+.logo-program .html i:hover{
+    font-size: 100px;
+    transition: .2s ease-in;
+    color: orangered;
+}
+.logo-program .css i:hover{
+    font-size: 100px;
+    transition: .2s ease-in;
+    color: blue;
+}
+
+.logo-program .java i:hover{
+    font-size: 100px;
+    transition: .2s ease-in;
+    color: yellow;
+}
+
+/*menu central About*/
+
+.grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.grid div{
+    background-color: #fff;
+}
+
+.grid .about{
+    margin-top: 10%;
+    padding: 25px;
+    color: black;
+}
+/*iconos about*/
+.grid .iconos-Programing{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 25em;
+}
+/*menu para diseñar web*/
+div:hover{
+    border: 1px solid orange;
+}
+
+
+
+img{
+    width: 100%;
+
+}
+
+
+/*menu3 Porfolio*/
+
+.main3{
+    display: grid;
+    grid-template-columns: 40% 25%;
+    padding: 20px;
+    margin-top: 2em;
+    margin-right: 50px;
+}
+
+.main3 .foto{
+    width: 150%;
+    
+}
+
+.main3 .Porfolio h1{
+    text-align: center;
+    font-size:50px;
+}
+
+
+.main3 .iconos .icon{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.main3 .design-2{
+    width: 30%;
+    display: block;
+    position: absolute;
+    transform: translateX(90%) translateY(-75%);
+}
+
+/*personalizcion icono*/
+i:hover{
+    color:#fff;
+    transition: ease-in .2s;
+    font-size: 50px;
+}
+
+/*empresas & servicios*/
+
+/*Footer*/
+.footer .content-footer{
+    background-color:blueviolet;
+    text-align: center;
+    padding:1em;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.footer .social-media{
+    max-width: 20%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/*media jquery*/
+@media(max-width: 1024px){
+    .fotografia{
+        position: inherit;
+        width: 300px;
+        margin-top: 50px;
+        transform: translateX(20%);
+    }
+    .main3 .design-2{
+        width: 250px;
+        position: absolute;
+        transform: translateX(250px) translateY(-300px);
+    }
+    .grid .iconos-Programing{
+        width: 50%;
+    }
+
+}
+
+
+@media screen and (max-width: 800px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .fotografia{
+        transform: translateX(5px);
+    }
+    /*porfolio*/
+
+    .main3{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .main3 .design-2{
+        width: 300px;
+        transform: translateX(-320px) translateY(-300px);
+    }
+    .contact-wrapper{
+        max-width: 100%;
+        
+    }
+
+
+}
+
+@media(max-width: 600px){
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 100%;
+        
+    }
+
+    .wrapper .titulo .descarga{
+        margin-top: 0;
+    }
+    .navegador li{
+        font-size: 20px;
+
+    }
+    a{
+        text-decoration: none;
+    }
+    .navegador a:hover{
+        font-size: 30px;
+        transition: .2s ease-in-out;
+    }
+
+    .fotografia{
+        display:none;
+    }
+    .img{
+        display: block;
+        max-width: 60;
+        margin-left: 25px;
+;
+    }
+    .wrapper .titulo{
+        grid-template-columns: 1fr;
+    }
+    
+    .grid .about{
+        margin-top: 0;
+    }
+    .main3{
+        display: grid;
+        grid-template-columns: 20%;
+
+    }
+    .main3 .imagen-opaca{
+        display: block;
+        position:absolute;
+        width: 90%;
+        float: left;
+        
+   
+    }
+
+    .Porfolio img{
+        position: relative;
+        transform: translateX( 15px);
+        width: 180%;
+        margin-left: -45%;
+    }
+
+    .Porfolio {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: x-large;
+        text-align: center;
+        margin-left: 150%;
+        margin-right: 0;
+        
+    }
+    .main3 .design-2{
+        width: 100px;
+        transform: translateX(150px) translateY(10px);
+    }
+    @media(max-width: 550px){
+        .main3 .design-2{
+           display: none;
+        } 
+        .Porfolio{
+            margin-left: 175%;
+        }
+    }
+
+}
