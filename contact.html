@@ -8,59 +8,28 @@
     <link rel="stylesheet" href="/CSS/ContactStyle.css">
 </head>
 <body>
-    <!--Formulario-->
-<div class="formulario">
-    <!--logo-->
-    <h1 class="logo">Contact <span>Us</span></h1>
-<!--formulario-wrapper-->
-    <div class="contact-wrapper">
-        <div class="contact-form">
-            <h3>Contact Us</h3>
-            <form action="">
-                <p>
-                    <label for="fullname">fullname</label>
-                    <input type="text" name="fullname" id="fullname">
-                </p>
-                <p>
-                    <label>email address</label>
-                </p>
-
-                <p>
-                    <label>phone</label>
-                    <input type="tel" name="phone">
-                </p>
-                <!--asunto-->
-                <p>
-                    <label for="affair/asunto">Affair</label>
-                    <input type="text" name="affair">
-                </p>    
-                <!--texto-->
-                <p class="block">
-                    <label>message</label>
-                <textarea name="message" rows="3"></textarea>
-                </p>
-                <!--boton-->
-                <p class="block">
-                    <button type="submit">send</button>
-                </p> 
-            </form>
-        </div>
-        <!--info contact-->
-        <div class="contact-info">
-            <h4>More Info</h4>
-            <ul>
-                <li><i class="fas fa-map-marker-alt"></i><B>Bakker Street</B></li>
-                <li><i class="fas fa-phone"></i>+549 3xx xxxxxx</li>
-                <li><i class="fas fa-envelope-open-text"></i>contact@website.com</i></li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, vel. Excepturi perspiciatis amet laboriosam ad omnis consequatur quia rem eligendi. Incidunt laudantium accusantium commodi veritatis! Reiciendis commodi quae nihil ipsa.</p>
-            <p>BrianGalli.com</p>
-        </div>
-
+    <!--Wrapper-->
+<body data-barba="wrapper">
+    <div data-barba="container" data-barba-namespace="home">
+        <div class="wrapper">
+            <!--header-->
+            <div class="nombre">
+                <h2>Brian <span>Galli</span>FullStack Developer</h2>
+            </div>
+            <!--Navegador-->
+            <div class="navegador">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#porfolio">Porfolio</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </div>
+    
 
     </div>
 
-</div>
-    
+
+<script src="/JS/Script.js"></script>
+<script src="/JS/barba.min.js"></script>
+<script src="/JS/custom.js"></script>
 </body>
 </html>

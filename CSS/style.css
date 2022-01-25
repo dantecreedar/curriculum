@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth ;
+}
 /*headings*/
 body{
     font-family:Arial, Helvetica, sans-serif;
     color: #fff;
     background-color: #000000;
+    transition: all .3s;
 }
 
 
@@ -163,7 +167,7 @@ a:hover{
 /*iconos about*/
 .grid .iconos-Programing{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 25em;
 }
 /*menu para diseñar web*/
@@ -215,6 +219,13 @@ img{
     transform: translateX(90%) translateY(-75%);
 }
 
+/**.main3 .git{
+    width: 20%;
+    display: block;
+    position: absolute;
+    transform: translateX(160%) translateY(-170%);
+}
+*/
 /*personalizcion icono*/
 i:hover{
     color:#fff;
@@ -243,6 +254,9 @@ i:hover{
 
 }
 
+.loading{
+    opacity: 0;
+}
 /*media jquery*/
 @media(max-width: 1024px){
     .fotografia{
@@ -257,7 +271,7 @@ i:hover{
         transform: translateX(250px) translateY(-300px);
     }
     .grid .iconos-Programing{
-        width: 50%;
+        width: 100%;
     }
 
 }
