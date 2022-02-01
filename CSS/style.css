@@ -124,7 +124,7 @@ a:hover{
 
 .logo-program {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 75px;
     margin-top: 50px;
     padding: 10px;
@@ -147,6 +147,11 @@ a:hover{
     transition: .2s ease-in;
     color: yellow;
 }
+.logo-program .node i:hover{
+    font-size: 100px;
+    transition: .2s ease-in;
+    color: greenyellow;
+}
 
 /*menu central About*/
 
@@ -167,8 +172,8 @@ a:hover{
 /*iconos about*/
 .grid .iconos-Programing{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 25em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 40em;
 }
 /*menu para diseñar web*/
 div:hover{
@@ -236,6 +241,8 @@ i:hover{
 /*Formulario*/
 
 .formulario{
+    background-color: #fff;
+    color:#000000;
     margin: 0 auto;
     width: 400px;
     padding: 1.8em;
@@ -263,12 +270,12 @@ input, textarea{
     box-sizing: border-box;
     border: 1px solid #999;
     border-radius: 5px;
-    
+
 }
 
 input:focus,
 textarea:focus{
-    border-color: #000;
+    border-color: #fff;
 }
 
 textarea{
@@ -294,6 +301,7 @@ li{
 }
 .enviar{
     text-align: center;
+    
 }
 .enviar:hover{
     font-size: 20px;
