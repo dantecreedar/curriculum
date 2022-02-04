@@ -9,7 +9,7 @@ boton.addEventListener  ('click', function () {
         console.log(descarga); 
     }
     else {
-        descarga = null;
+        descarga = null,
     }
       
    
