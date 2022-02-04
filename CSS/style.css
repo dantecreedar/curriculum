@@ -31,7 +31,7 @@ body{
 }
 
 .wrapper .nombre span{
-    color:aqua;
+    color:greenyellow;
 }
 
 .wrapper .navegador{
@@ -76,7 +76,7 @@ a:hover{
 
 /*nombre*/
 .titulo .descarga h1,p{
-    font-size: 30px;
+    font-size: 20px;
 }
 .wrapper .descarga{
     margin-top: 30%;
@@ -311,7 +311,7 @@ li{
 }
 /*Footer*/
 .footer .content-footer{
-    background-color:blueviolet;
+    background: linear-gradient(0deg, rgba(138,44,226,1) 0%, rgba(0,0,0,1) 67%);
     text-align: center;
     padding:1em;
     margin-top: 50px;
